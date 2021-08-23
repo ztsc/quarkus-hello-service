@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ztsc-quarkus-hello-service-app
+  name: quarkus-hello-service-app
   labels:
-    app: ztsc-quarkus-hello-service-app
+    app: quarkus-hello-service-app
 spec:
   ports:
   - port: 8080
     protocol: TCP
     targetPort: 8080
   selector:
-    app: ztsc-quarkus-hello-service-app
+    app: quarkus-hello-service-app
   type: ClusterIP

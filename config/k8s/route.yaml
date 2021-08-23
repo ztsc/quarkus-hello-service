@@ -1,13 +1,13 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: ztsc-quarkus-hello-service-app
+  name: quarkus-hello-service-app
   labels:
-    app: ztsc-quarkus-hello-service-app
+    app: quarkus-hello-service-app
 spec:
-  host: ztsc-quarkus-hello-service-app-dev.ibmcloud-roks-rc79n-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-south.containers.appdomain.cloud # Modify to use your FQDN e.g. <app-name>.apps.<clustername>.<domain>.
+  host: quarkus-hello-service-app-dev2.ibmcloud-roks-rc79n-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-south.containers.appdomain.cloud # Modify to use your FQDN e.g. <app-name>.apps.<clustername>.<domain>.
   tls:
     termination: edge # Relies on OpenShift setup with Let's Encrypt.
   to:
     kind: Service
-    name: ztsc-quarkus-hello-service-app
+    name: quarkus-hello-service-app
