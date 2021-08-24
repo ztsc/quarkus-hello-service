@@ -22,8 +22,8 @@
 #
 ###
 #FROM registry.access.redhat.com/ubi8/ubi-minimal:8.3 
-FROM docker.io/gkovan/base-quarkus-image:56c1a68
-LABEL base.image="docker.io/gkovan/base-quarkus-image:56c1a68"
+FROM docker.io/gkovan/quarkus-base-image:1.0
+LABEL base.image="docker.io/gkovan/quarkus-base-image:1.0"
 # Configure the JAVA_OPTIONS, you can add -XshowSettings:vm to also display the heap size.
 ENV JAVA_OPTIONS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager"
 # We make four distinct layers so if there are application changes the library layers can be re-used
