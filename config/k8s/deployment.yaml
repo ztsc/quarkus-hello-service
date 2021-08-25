@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quarkus-hello-service-app
+  name: quarkus-hello-service
   labels:
-    app: quarkus-hello-service-app
+    app: quarkus-hello-service
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: quarkus-hello-service-app
+      app: quarkus-hello-service
   template:
     metadata:
       labels:
-        app: quarkus-hello-service-app
+        app: quarkus-hello-service
     spec:
       containers:
-        - name: quarkus-hello-service-app
+        - name: quarkus-hello-service
           image: quay.io/ifont/sigstore-demo-app:latest
           ports:
             - containerPort: 8080
