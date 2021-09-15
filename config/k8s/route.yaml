@@ -5,7 +5,7 @@ metadata:
   labels:
     app: quarkus-hello-service
 spec:
-  host: quarkus-hello-service-dev2.ibmcloud-roks-rc79n-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-south.containers.appdomain.cloud # Modify to use your FQDN e.g. <app-name>.apps.<clustername>.<domain>.
+  host: quarkus-hello-service-dev2.ibmcloud-roks-q47i6y71-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-east.containers.appdomain.cloud # Modify to use your FQDN e.g. <app-name>.apps.<clustername>.<domain>.
   tls:
     termination: edge # Relies on OpenShift setup with Let's Encrypt.
   to:
